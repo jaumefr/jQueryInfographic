@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sensor</title>
+<style>
+
+#main-container{
+	width:300px;
+    height:300px;
+    background-color:#330000;	background-image:url("http://www.vantaa.fi/instancedata/prime_product_julkaisu/vantaa/embeds/vantaawwwstructure/4eca207bfa37efa5cd19e8b7a7a88bc4550ca248.jpg");
+    position: absolute;
+    top:150px;
+    left:10px;
+    padding:10px;
+}
+
+#sensor1{
+	width:50px;
+    height:50px;
+	border-radius: 25px;
+    position: relative;
+    top:150px;
+    left:40px;
+}
+#sensor1:hover{
+	background-color:rgba(255,0,0,0.5);
+}
+
+#content1{
+	width:100px;
+    height:100px;	background-image:url("https://a.wattpad.com/useravatar/DanielleLopez988.256.51096.jpg");
+	background-size:cover;
+    position: relative;
+    top:100px;
+    left:120px;
+    display:none;
+	opacity:0.8;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#sensor1").click(function(){
+        $("#content1").show();
+    });
+    $("#content1").click(function(){
+        $("#content1").hide();
+    });
+});
+</script>
+</head>
+<body>
+<h1>SENSOR</h1>
+<p>Feel free to explore and find a hidden trigger to show Content. Click on the Content to hide it.</p>
+<div id="main-container">
+	<div id="sensor1"></div>
+	<div id="content1"></div>
+</div>
+
+</body>
+</html>

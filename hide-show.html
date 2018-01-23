@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>hide-show</title>
+<style>
+#content{
+	width:100px;
+    height:100px;
+    background-color:red;
+    position: absolute;
+    top:200px;
+    left:50px;
+    padding:10px;
+    display:none;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#content").hide();
+    });
+    $("#show").click(function(){
+        $("#content").show();
+    });
+});
+</script>
+</head>
+<body>
+<h1>HIDE-SHOW</h1>
+<p>If you click on the "Show" button, content will be shown.<br>On the contrary, click "Hide" to hide it.</p>
+
+<button id="show">Show</button>
+<button id="hide">Hide</button>
+<div id="content">hola</div>
+
+</body>
+</html>
